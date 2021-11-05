@@ -9,8 +9,8 @@
 
 << [link to demo presentation slides](#) >>
 
-### Team: << team name >>
-#### << Team Members >>
+### Team: << Spiky Koalas >>
+#### << Madeline Scotti, Klara Veljkovic, Luisa Urgiles >>
 
 ***
 
@@ -47,6 +47,7 @@ The Project is broken down into the following file structure:
     * <all of your python files should go here>
 * assets
     * <all of your media, i.e. images, font files, etc, should go here)
+
 * etc
     * <This is a catch all folder for things that are not part of your project, but you want to keep with your project. Your demo video should go here.>
 
