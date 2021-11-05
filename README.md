@@ -47,6 +47,10 @@ The Project is broken down into the following file structure:
     * <all of your python files should go here>
 * assets
     * <all of your media, i.e. images, font files, etc, should go here)
+           ![Start Page](https://user-images.githubusercontent.com/89817842/140589608-e448fe0b-6b97-4ff0-86fb-098878db4bbb.png)
+           ![game screen](https://user-images.githubusercontent.com/89817842/140589646-ae4daaa2-eba4-49f5-bc00-404efab46b9a.png)
+           ![Game over](https://user-images.githubusercontent.com/89817842/140589652-8295ef98-8917-49a7-909e-ed5e3fe729ae.png)
+
 * etc
     * <This is a catch all folder for things that are not part of your project, but you want to keep with your project. Your demo video should go here.>
 
