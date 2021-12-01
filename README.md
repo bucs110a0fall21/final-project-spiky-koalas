@@ -66,15 +66,22 @@ The Project is broken down into the following file structure:
 ### Software Lead - Madeline Scotti
 
 << Worked as integration specialist by... >>
+       Did most of pixel art and GUI designing
+       Colloborated on/helped write Controller, Enemy, and Hero classes
+       Gave ideas on how to structure code and what to fix in Controller, Enemy, and Hero classes
 
-### Front End Specialist - << name >>
+### Front End Specialist - Klara Veljkovic
 
 << Front-end lead conducted significant research on... >>
+       Controller class 
+       Collaborated with the GUI
 
-### Back End Specialist - << name >>
+### Back End Specialist - Luisa Urgiles
 
 << The back end specialist... >>
-
+      Enemy class
+      Player Class
+      Collaborated with the GUI
 ## Testing *(Software Lead)*
 * << Describe your testing strategy for your project. >>
     * << Example >>
