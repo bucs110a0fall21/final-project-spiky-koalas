@@ -9,8 +9,8 @@
 
 << [link to demo presentation slides](#) >>
 
-### Team: << team name >>
-#### << Team Members >>
+### Team: Spiky Koalas 
+#### Madeline Scotti, Klara Veljkovic, Luisa Urgiles
 
 ***
 
@@ -45,6 +45,9 @@ The Project is broken down into the following file structure:
 * main.py
 * bin
     * <all of your python files should go here>
+    * Controller.py
+    * Player.py
+    * Enemy.py
 * assets
     * <all of your media, i.e. images, font files, etc, should go here)
            ![Start Page](https://user-images.githubusercontent.com/89817842/140589608-e448fe0b-6b97-4ff0-86fb-098878db4bbb.png)
@@ -60,7 +63,7 @@ The Project is broken down into the following file structure:
 ## Tasks and Responsibilities *(Software Lead)*
 * You must outline the team member roles and who was responsible for each class/method, both individual and collaborative.
 
-### Software Lead - << name >>
+### Software Lead - Madeline Scotti
 
 << Worked as integration specialist by... >>
 
