@@ -44,7 +44,7 @@
 The Project is broken down into the following file structure:
 * main.py
 * bin
-    * <all of your python files should go here>
+    <all of your python files should go here>
     * Controller.py
     * Player.py
     * Enemy.py
