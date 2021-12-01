@@ -81,5 +81,4 @@ The Project is broken down into the following file structure:
 
 * Your ATP
    
-   [Spiky Koalas ATP.pdf](https://github.com/bucs110a0fall21/final-project-spiky-koalas/files/7637751/Spiky.Koalas.ATP.pdf)
    https://docs.google.com/document/d/1QgSzXg7QFyQTuhldvFxYSisDCKwrF7AnpJ15ZKLmcSE/edit
