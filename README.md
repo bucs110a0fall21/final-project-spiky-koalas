@@ -82,9 +82,4 @@ The Project is broken down into the following file structure:
 * Your ATP
    
    [Spiky Koalas ATP.pdf](https://github.com/bucs110a0fall21/final-project-spiky-koalas/files/7637751/Spiky.Koalas.ATP.pdf)
-   
-| Step                  | Procedure     | Expected Results  | Actual Results |
-| ----------------------|:-------------:| -----------------:| -------------- |
-|  1  | Run Counter Program  | GUI window appears with count = 0  |          |
-|  2  | click count button  | display changes to count = 1 |                 |
-etc...
+   https://docs.google.com/document/d/1QgSzXg7QFyQTuhldvFxYSisDCKwrF7AnpJ15ZKLmcSE/edit
