@@ -2,15 +2,20 @@
 # CS110 Project Proposal
 # << Project Title >>
 ## CS 110 Final Project
-### << Semester, Year >>
+### Fall 2021
 ### [Assignment Description](https://docs.google.com/document/d/1H4R6yLL7som1lglyXWZ04RvTp_RvRFCCBn6sqv-82ps/edit#)
 
 << [https://github.com/<repo>](#) >>
 
 << [link to demo presentation slides](#) >>
 
+<<<<<<< HEAD
 ### Team: << Spiky Koalas >>
 #### << Madeline Scotti, Klara Veljkovic, Luisa Urgiles >>
+=======
+### Team: Spiky Koalas 
+#### Madeline Scotti, Klara Veljkovic, Luisa Urgiles
+>>>>>>> 98ea08ac1992bec57d62a2a085ad75f0a9c1427a
 
 ***
 
@@ -44,7 +49,10 @@
 The Project is broken down into the following file structure:
 * main.py
 * bin
-    * <all of your python files should go here>
+    <all of your python files should go here>
+    * Controller.py
+    * Player.py
+    * Enemy.py
 * assets
     * <all of your media, i.e. images, font files, etc, should go here)
 <<<<<<< HEAD
@@ -52,7 +60,11 @@ The Project is broken down into the following file structure:
            ![Start Page](https://user-images.githubusercontent.com/89817842/140589608-e448fe0b-6b97-4ff0-86fb-098878db4bbb.png)
            ![game screen](https://user-images.githubusercontent.com/89817842/140589646-ae4daaa2-eba4-49f5-bc00-404efab46b9a.png)
            ![Game over](https://user-images.githubusercontent.com/89817842/140589652-8295ef98-8917-49a7-909e-ed5e3fe729ae.png)
+<<<<<<< HEAD
 >>>>>>> 675ccfb5f1a555f57c422dcda63f8037d48cbdf7
+=======
+             [Project Structure (1).pdf](https://github.com/bucs110a0fall21/final-project-spiky-koalas/files/7500290/Project.Structure.1.pdf)
+>>>>>>> 98ea08ac1992bec57d62a2a085ad75f0a9c1427a
 
 * etc
     * <This is a catch all folder for things that are not part of your project, but you want to keep with your project. Your demo video should go here.>
@@ -62,26 +74,29 @@ The Project is broken down into the following file structure:
 ## Tasks and Responsibilities *(Software Lead)*
 * You must outline the team member roles and who was responsible for each class/method, both individual and collaborative.
 
-### Software Lead - << name >>
+### Software Lead - Madeline Scotti
 
 << Worked as integration specialist by... >>
+       Did most of pixel art and GUI designing
+       Colloborated on/helped write Controller, Enemy, and Hero classes
+       Gave ideas on how to structure code and what to fix in Controller, Enemy, and Hero classes
 
-### Front End Specialist - << name >>
+### Front End Specialist - Klara Veljkovic
 
 << Front-end lead conducted significant research on... >>
+       Controller class 
+       Collaborated with the GUI
 
-### Back End Specialist - << name >>
+### Back End Specialist - Luisa Urgiles
 
 << The back end specialist... >>
-
+      Enemy class
+      Player Class
+      Collaborated with the GUI
 ## Testing *(Software Lead)*
 * << Describe your testing strategy for your project. >>
     * << Example >>
 
 * Your ATP
-
-| Step                  | Procedure     | Expected Results  | Actual Results |
-| ----------------------|:-------------:| -----------------:| -------------- |
-|  1  | Run Counter Program  | GUI window appears with count = 0  |          |
-|  2  | click count button  | display changes to count = 1 |                 |
-etc...
+   
+   https://docs.google.com/document/d/1QgSzXg7QFyQTuhldvFxYSisDCKwrF7AnpJ15ZKLmcSE/edit
