@@ -1,6 +1,6 @@
 :warning: Everything between << >> needs to be replaced (remove << >> after replacing)
 # CS110 Project Proposal
-# << Project Title >>
+# The Haunted Mansion
 ## CS 110 Final Project
 ### Fall 2021
 ### [Assignment Description](https://docs.google.com/document/d/1H4R6yLL7som1lglyXWZ04RvTp_RvRFCCBn6sqv-82ps/edit#)
@@ -10,7 +10,7 @@
 << [link to demo presentation slides](#) >>
 
 <<<<<<< HEAD
-### Team: << Spiky Koalas >>
+### <<Team: Spiky Koalas>>
 #### << Madeline Scotti, Klara Veljkovic, Luisa Urgiles >>
 =======
 ### Team: Spiky Koalas 
@@ -20,7 +20,8 @@
 ***
 
 ## Project Description *(Software Lead)*
-<< Give an overview of your project >>
+  
+Basic RPG game. Has a menu page that allows you to either start a new game and enter your name, load an existing saved game using a save file, or exit/quit the game. After the game starts, the "Player" is put inside of the mansion and will see a book, potion, and 1 enemy. The user can use the arrow keys to move the Player and the space bar to attack. If the Player collides with and attacks the enemy, the enemy's health will decrese, but if the Player is not attacking then the Player will lose health. Anytime during the game, if the player collides with the book, then the player will be able to save the game and then coninue or save the game and quit to the menu screen. If the player collides with the potion their health will be brought back to full health (100). If the enemy looses all of its health, then the player wins and the screen will change to display "Enemey Defeated" and give the user an option to exit to menu. If the player looses all of their health, then the screen will change to display "Game Over" and the user will have the option to quit the game or reload from save point. 
 
 ***    
 
@@ -63,8 +64,9 @@ The Project is broken down into the following file structure:
     * Controller.py
     * Player.py
     * Enemy.py
+    * Item.py
 * assets
-    * <all of your media, i.e. images, font files, etc, should go here)
+    * <all of your media, i.e. images, font files, etc, should go here)>
 <<<<<<< HEAD
 =======
 Images.
@@ -97,7 +99,7 @@ Fonts (Preview).
 
 << Worked as integration specialist by... >>
        Did most of pixel art and GUI designing
-       Colloborated on/helped write Controller, Enemy, and Hero classes
+       Colloborated on/helped write Controller, Enemy, Item and Hero classes
        Gave ideas on how to structure code and what to fix in Controller, Enemy, and Hero classes
 
 ### Front End Specialist - Klara Veljkovic
@@ -111,10 +113,13 @@ Fonts (Preview).
 << The back end specialist... >>
       Enemy class
       Player Class
+      Item Class
       Collaborated with the GUI
 ## Testing *(Software Lead)*
 * << Describe your testing strategy for your project. >>
-    * << Example >>
+    * Ran the code repeatedly whenever an error came up until it could be specifically identified. Then fixed issues and ran code again trying to cause the same         error from before to see if problem was actuallly fixed.
+    * When the backspace feature when typing in the inpuit box on the menu page did not work. We tried to run the code over an over to see exactly what the problem       was. Also, asked Prof. Moore for help. Then after finding the issue and fixing it, we ran the menu page many times trying to get an error, such as writing         more code than the amount of space in the box, writing letters that go below the box line a little, ie. gpq, etc and seeing if the backspace still worked.
+      
 
 * Your ATP
    
