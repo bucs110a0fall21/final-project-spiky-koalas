@@ -1,5 +1,5 @@
 
-#import your controller
+from src import Controller
 import pygame
 
 def main():
@@ -10,6 +10,8 @@ def main():
     print("Frontend is:" , team["frontend"])
     #Create an instance on your controller objects
     #Call your mainloop
-    
+    game = Controller.Controller()
+    game.mainLoop()
+	
     ###### NOTHING ELSE SHOULD GO IN main(), JUST THE ABOVE 2 LINES OF CODE ######
 main()
