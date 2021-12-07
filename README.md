@@ -10,8 +10,8 @@
 << [link to demo presentation slides](#) >>
 
 <<<<<<< HEAD
-### <<Team: Spiky Koalas>>
-#### << Madeline Scotti, Klara Veljkovic, Luisa Urgiles >>
+### Team: Spiky Koalas
+#### Madeline Scotti, Klara Veljkovic, Luisa Urgiles
 =======
 ### Team: Spiky Koalas 
 #### Madeline Scotti, Klara Veljkovic, Luisa Urgiles
@@ -28,15 +28,23 @@ Basic RPG game. Has a menu page that allows you to either start a new game and e
 ## User Interface Design *(Front End Specialist)*
 Start page drawing.
 ![Start Page](https://user-images.githubusercontent.com/89892102/145114765-0323b71a-0cc5-439a-871d-b951caf820d2.png)
-^ The state page contains the "Start game"-Begins the game when pressed,, "Load game"-Loads the save file, "Exit"-Will exit the program. Has a small picture relating to the game concept.
+^ The start page contains the "Start game"-Begins the game when pressed,, "Load game"-Loads the save file, "Exit"-Will exit the program. Has a small picture relating to the game concept.
    
 Game screen drawing.
 ![game screen](https://user-images.githubusercontent.com/89892102/145115320-a44df99a-7890-4031-9b73-082f2e93bce8.png)
 ^ Has the character, enemy, and object on the screen with a background. Object should be interactable and the enemy should be able to be removed from the screen when killed.
+  
+Pick up book in game screen (Save screen).
+![Pause screen (1)](https://user-images.githubusercontent.com/89892102/145122945-5c06478f-2cbc-4336-bd77-ad3ffdcf26e0.png)
+^ Has 3 options for the player to pick when they pick up the book. Each button does as it says.
    
 Game over drawing.
 ![Game over](https://user-images.githubusercontent.com/89892102/145115554-8caac79f-2d08-4d0f-8e38-9d8a05afa75e.png)
 ^ Game over screen should have a "Try again"-Changes the screen back to the Start page/Main Menu and "Exit"-Exits the program, button.
+  
+Victory screen.
+![Victory screen](https://user-images.githubusercontent.com/89892102/145123039-70109e9f-00e2-4c48-856d-14c9d0aaa5a3.png)
+^ Screen is displayed after enemy is defeated. Text should say victory, etc. Player can only now exit the game.
 
 * << You should also have a screenshot of each screen for your final GUI >>
 
@@ -76,7 +84,16 @@ Images.
 ![gameover](https://user-images.githubusercontent.com/89892102/145116308-ee2d190b-3e56-4c23-972f-01783105f562.png)
 ![inside_mw](https://user-images.githubusercontent.com/89892102/145116325-f5ef6e27-7533-49af-a4e8-94221710561a.png)
 ![mansion](https://user-images.githubusercontent.com/89892102/145116481-a190b0e6-582e-4ec8-bac5-b2857f8d9992.png)
+![Player_U](https://user-images.githubusercontent.com/89892102/145123210-ab78206f-2155-4206-9efa-6721fa1aec3b.png)
+![Player_RA2](https://user-images.githubusercontent.com/89892102/145123215-cbfbc93f-150a-453a-8e7e-8b556be162e4.png)
+![Player_RA1](https://user-images.githubusercontent.com/89892102/145123226-682aec8b-c9ad-437e-a958-8bbe53485770.png)
+![Player_LA2](https://user-images.githubusercontent.com/89892102/145123233-301e56dd-3942-4d08-8d21-cb75a37f499a.png)
+![Player_LA1](https://user-images.githubusercontent.com/89892102/145123240-89c71fbb-2cae-4a28-b36a-c3213ff29ac1.png)
+![Player_L](https://user-images.githubusercontent.com/89892102/145123247-371b4ba3-ad08-40e0-aacd-437083de8210.png)
+![Player_D](https://user-images.githubusercontent.com/89892102/145123254-728c767d-569a-4e09-9f96-0ea9a669adc6.png)
+![Player_R](https://user-images.githubusercontent.com/89892102/145123319-3d6807b1-501f-487c-b4c3-11317f0323b8.png)
 
+           
 Fonts (Preview).
 ![PREVIEW DAFONT DIN STD](https://user-images.githubusercontent.com/89892102/145116378-91d962e5-e489-41ab-8551-cf5c032b2318.png)
 ![Stranger Cover](https://user-images.githubusercontent.com/89892102/145116437-b0a493df-3639-4bc5-80a5-0874dc24e5c3.PNG)
@@ -96,27 +113,24 @@ Fonts (Preview).
 * You must outline the team member roles and who was responsible for each class/method, both individual and collaborative.
 
 ### Software Lead - Madeline Scotti
-
-<< Worked as integration specialist by... >>
+Worked as integration specialist by
        Did most of pixel art and GUI designing
        Colloborated on/helped write Controller, Enemy, Item and Hero classes
        Gave ideas on how to structure code and what to fix in Controller, Enemy, and Hero classes
 
 ### Front End Specialist - Klara Veljkovic
-
-<< Front-end lead conducted significant research on... >>
+Front-end lead conducted significant research on
        Controller class 
        Collaborated with the GUI
 
 ### Back End Specialist - Luisa Urgiles
-
-<< The back end specialist... >>
+The back end specialist
       Enemy class
       Player Class
       Item Class
       Collaborated with the GUI
+      
 ## Testing *(Software Lead)*
-* << Describe your testing strategy for your project. >>
     * Ran the code repeatedly whenever an error came up until it could be specifically identified. Then fixed issues and ran code again trying to cause the same         error from before to see if problem was actuallly fixed.
     * When the backspace feature when typing in the inpuit box on the menu page did not work. We tried to run the code over an over to see exactly what the problem       was. Also, asked Prof. Moore for help. Then after finding the issue and fixing it, we ran the menu page many times trying to get an error, such as writing         more code than the amount of space in the box, writing letters that go below the box line a little, ie. gpq, etc and seeing if the backspace still worked.
       
