@@ -1,20 +1,28 @@
 
 import pygame
 
-class Enemy():
-  def __init__(self):
+class Enemy(pygame.sprite.Sprite):
+  def __init__(self, name, x, y, img_fl):
     """
     description: Initializes the enemy state and sprite. 
     args: None 
     return: None 
     """
     pygame.sprite.Sprite.__init__(self)
-    self.image = pygame.image.load("assets/enemy.png").convert_alpha()
+    self.image = pygame.image.load(img_fl).convert_alpha()
     self.rect = self.image.get_rect()
-    self.rect.x = 40 
-    self.rect.y = 2 
+    self.rect.x = x 
+    self.rect.y = y 
+    self.speed = 3
+    self.name = "Ghosty" 
+    self.health = 50
 
-    self.name = "BOO" 
-  
+
   def update(self):
-    pass
+    """
+    description: 
+    args: None
+    return: None
+    """
+    if self.health <= 0:
+      self.kill()
