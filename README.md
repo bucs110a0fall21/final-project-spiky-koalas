@@ -25,8 +25,18 @@
 ***    
 
 ## User Interface Design *(Front End Specialist)*
-* << A wireframe or drawing of the user interface concept along with a short description of the interface. You should have one for each screen in your program. >>
-    * For example, if your program has a start screen, game screen, and game over screen, you should include a wireframe / screenshot / drawing of each one and a short description of the components
+Start page drawing.
+![Start Page](https://user-images.githubusercontent.com/89892102/145114765-0323b71a-0cc5-439a-871d-b951caf820d2.png)
+^ The state page contains the "Start game"-Begins the game when pressed,, "Load game"-Loads the save file, "Exit"-Will exit the program. Has a small picture relating to the game concept.
+   
+Game screen drawing.
+![game screen](https://user-images.githubusercontent.com/89892102/145115320-a44df99a-7890-4031-9b73-082f2e93bce8.png)
+^ Has the character, enemy, and object on the screen with a background. Object should be interactable and the enemy should be able to be removed from the screen when killed.
+   
+Game over drawing.
+![Game over](https://user-images.githubusercontent.com/89892102/145115554-8caac79f-2d08-4d0f-8e38-9d8a05afa75e.png)
+^ Game over screen should have a "Try again"-Changes the screen back to the Start page/Main Menu and "Exit"-Exits the program, button.
+
 * << You should also have a screenshot of each screen for your final GUI >>
 
 ***        
@@ -57,9 +67,18 @@ The Project is broken down into the following file structure:
     * <all of your media, i.e. images, font files, etc, should go here)
 <<<<<<< HEAD
 =======
-           ![Start Page](https://user-images.githubusercontent.com/89817842/140589608-e448fe0b-6b97-4ff0-86fb-098878db4bbb.png)
-           ![game screen](https://user-images.githubusercontent.com/89817842/140589646-ae4daaa2-eba4-49f5-bc00-404efab46b9a.png)
-           ![Game over](https://user-images.githubusercontent.com/89817842/140589652-8295ef98-8917-49a7-909e-ed5e3fe729ae.png)
+Images.
+![Book](https://user-images.githubusercontent.com/89892102/145116243-ae598475-24ff-4240-a590-f52dce61703f.png)
+![button](https://user-images.githubusercontent.com/89892102/145116258-fdbe39c7-9002-4d1a-9806-2282da7664cb.png)
+![enemy_L](https://user-images.githubusercontent.com/89892102/145116283-0ac7df26-e451-4e53-bb0f-16455a3fa9d4.png)
+![gameover](https://user-images.githubusercontent.com/89892102/145116308-ee2d190b-3e56-4c23-972f-01783105f562.png)
+![inside_mw](https://user-images.githubusercontent.com/89892102/145116325-f5ef6e27-7533-49af-a4e8-94221710561a.png)
+![mansion](https://user-images.githubusercontent.com/89892102/145116481-a190b0e6-582e-4ec8-bac5-b2857f8d9992.png)
+
+Fonts (Preview).
+![PREVIEW DAFONT DIN STD](https://user-images.githubusercontent.com/89892102/145116378-91d962e5-e489-41ab-8551-cf5c032b2318.png)
+![Stranger Cover](https://user-images.githubusercontent.com/89892102/145116437-b0a493df-3639-4bc5-80a5-0874dc24e5c3.PNG)
+      
 <<<<<<< HEAD
 >>>>>>> 675ccfb5f1a555f57c422dcda63f8037d48cbdf7
 =======
