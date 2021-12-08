@@ -67,7 +67,7 @@ class Controller:
     """
     while self.state == "MENU":
       pygame.font.init()
-      font = pygame.font.Font("assets/Stranger back in the Night.ttf", 80)
+      font = pygame.font.Font("assets/Stranger_back_in_the_Night.ttf", 80)
       font2 = pygame.font.Font('assets/Basking.ttf', 20)
       text = font.render('The Haunted', True, (131, 139, 139))
       text2 = font.render('Mansion', True, (131, 139, 139))
