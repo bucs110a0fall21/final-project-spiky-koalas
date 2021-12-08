@@ -167,7 +167,6 @@ class Controller:
     args: None
     return: None
     """
-    pass
     while self.state == "SAVE":
       pygame.font.init()
       self.screen.fill((0, 0, 0))
@@ -175,16 +174,17 @@ class Controller:
       text1 = font.render('Save and Continue', True, (131, 139, 139))
       text2 = font.render('Save and Quit', True, (131, 139, 139))
       
-      button_SC = pygame.Rect((175, 20), (250, 200))
-      button_SQ = pygame.Rect((175, 70), (250, 200))  
+      button_SC = pygame.Rect((165, 20), (150, 100))
+      button_SQ = pygame.Rect((165, 70), (150, 100))  
 
-      self.screen.blit(self.rbutton, (165, 20))
-      self.screen.blit(self.rbutton, (165, 70))
-      self.rbutton = pygame.transform.scale(self.button, (200, 150))
-
-      self.screen.blit(text1, (185, 70))
-      self.screen.blit(text2, (185, 120))
-
+      thisbutton = self.rbutton
+      thisbutton = pygame.transform.scale(thisbutton, (200,150))
+      
+      self.screen.blit(thisbutton, (165, 20))
+      self.screen.blit(thisbutton, (165, 70))
+      self.screen.blit(text1, (177,70))
+      self.screen.blit(text2, (177,120))
+      
       click = False
       mx, my = pygame.mouse.get_pos()
 
@@ -198,7 +198,8 @@ class Controller:
         if click:
           fptr = open("assets/data.json", "w")
           stats = {
-            "position" : self.player.rect.update(self.player.rect),
+            "position_x" : 100,
+            "position_y" : 200,
             "health" : self.player.health,
             "enemy" : self.enemy.health,
             "state" : "GAME"
@@ -210,17 +211,20 @@ class Controller:
           
           fptr = open("assets/data.json", "r")
           stats = json.load(fptr)
-          self.player.rect = stats["position"]
+          self.player.rect.x = stats["position_x"]
+          self.player.rect.y = stats["position_y"]
           self.player.health = stats["health"]
           self.enemy.health = stats["enemy"]
-          self.state = stats["state"]
+          self.state == stats["state"]
           fptr.close()
+          
 
       if button_SQ.collidepoint((mx, my)):
         if click:
           fptr = open("assets/data.json", "w")
           stats = {
-            "position" : self.player.rect.update(self.player.rect),
+            "position_x" : 100,
+            "position_y" : 200,
             "health" : self.player.health,
             "enemy" : self.enemy.health,
             "state" : "GAME"
@@ -228,6 +232,7 @@ class Controller:
           json.dump(stats, fptr)
           fptr.close()
           self.screen.fill((0,0,0))
+          
           self.state = "MENU"
 
       pygame.display.update()
@@ -296,6 +301,9 @@ class Controller:
     args: None
     return: None
     """
+    self.enemy.health = 50
+    self.player.health = 100
+    self.player.direction = "U"
     input_box = pygame.Rect((310, 10), (25, 28))
     inside_box = pygame.Rect((313, 10), (200, 32))
     font = pygame.font.Font('assets/Basking.ttf', 20)
