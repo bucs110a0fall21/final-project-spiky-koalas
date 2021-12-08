@@ -11,8 +11,8 @@ class Enemy(pygame.sprite.Sprite):
     pygame.sprite.Sprite.__init__(self)
     self.image = pygame.image.load(img_fl).convert_alpha()
     self.rect = self.image.get_rect()
-    self.rect.x = x 
-    self.rect.y = y 
+    self.rect.x = x
+    self.rect.y = y
     self.speed = 3
     self.name = "Ghosty" 
     self.health = 50
@@ -20,7 +20,7 @@ class Enemy(pygame.sprite.Sprite):
 
   def update(self):
     """
-    description: 
+    description: Kills the enemy if its health reaches 0 or is less than 0.
     args: None
     return: None
     """

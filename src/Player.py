@@ -17,16 +17,15 @@ class Player(pygame.sprite.Sprite):
     #self.music2 = pygame.mixer.music("assets/...")#need to get background music for the game
     #self.music3 = pygame.mixer.music("assets/...")
     self.rect = self.image.get_rect()
-    self.rect.x = 10
-    self.rect.y = 10
-    self.rect.inflate_ip(-195, -380)
+    self.rect.x = 100
+    self.rect.y = 200
+    self.rect = pygame.Rect((self.rect.x,self.rect.y),(10,20))
     self.direction = "U"
     self.speed = 15
     self.name = "Boo"
     self.health = 100
     self.attacking = False
     self.attack_frame = 0
-    self.rect.clamp_ip
 
   def move(self, direction):
     """
@@ -78,3 +77,4 @@ class Player(pygame.sprite.Sprite):
       self.image = self.attack_ani_L[self.attack_frame]
     
     self.attack_frame += 1
+

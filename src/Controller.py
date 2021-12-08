@@ -7,12 +7,13 @@ import pygame
 import random
 import sys
 import json
+import numpy
 
 
 class Controller:
   def __init__(self):
     """
-    description: sets up pygame and window
+    description: sets up pygame and window.
     args: None
     return: None
     """
@@ -24,8 +25,8 @@ class Controller:
     pygame.key.set_repeat(50, 500)
     self.state = "MENU"
 
-    self.book = Item.Item(350, 260, 1)
-    self.potion = Item.Item(350, 150, 2)
+    self.book = Item.Item(150, 140, 1)
+    self.potion = Item.Item(310, 190, 2)
     self.player = Player.Player()
     self.enemy = Enemy.Enemy("Ghosty", 300, 160, "assets/enemy_L.png")
     self.all_sprites = pygame.sprite.Group((self.enemy), (self.player), (self.book), (self.potion))
@@ -33,6 +34,7 @@ class Controller:
     self.inside = pygame.image.load("assets/inside_mw.png")
     self.bck_img1 = pygame.image.load("assets/mansion.png")
     self.gameover = pygame.image.load("assets/gameover.png")
+    self.balloons = pygame.image.load("assets/balloons.png")
     self.real_img1 = pygame.transform.scale(self.bck_img1, (300, 300))
     self.real_inside = pygame.transform.scale(self.inside, (470, 300))
     self.real_gameover = pygame.transform.scale(self.gameover, (470, 300))
@@ -54,11 +56,18 @@ class Controller:
         self.gameOver()
       elif (self.state == "SAVE"):
         self.savePoint()
+      elif (self.state == "WIN"):
+        self.win()
 
   def menu(self):
+    """
+    description: Sets up menu screen with its text , boxes
+    args: None
+    return: None
+    """
     while self.state == "MENU":
       pygame.font.init()
-      font = pygame.font.Font("assets/Stranger_back_in_the_Night.ttf", 80)
+      font = pygame.font.Font("assets/Stranger back in the Night.ttf", 80)
       font2 = pygame.font.Font('assets/Basking.ttf', 20)
       text = font.render('The Haunted', True, (131, 139, 139))
       text2 = font.render('Mansion', True, (131, 139, 139))
@@ -99,6 +108,7 @@ class Controller:
       if button_LG.collidepoint((mx, my)):
         if click:
           self.loadGame()
+        
 
       if button_Exit.collidepoint((mx, my)):
         if click:
@@ -108,7 +118,7 @@ class Controller:
 
   def gameLoop(self):
     """
-    player moves based on what key is pressed, if player collides with enemy starts a fight
+    description: player moves based on what key is pressed, if player collides with enemy starts a fight
     args: (None)
     return: (None)
     """
@@ -135,7 +145,7 @@ class Controller:
       fight = pygame.Rect.colliderect(self.player.rect, self.enemy.rect)
       if fight:
         if self.player.attacking == True:
-          self.enemy.health -= random.randrange(15, 25)
+          self.enemy.health -= numpy.random.randint(15, 25)
         elif self.player.attacking == False:
           self.player.health -= random.randrange(10, 20)
 
@@ -152,25 +162,28 @@ class Controller:
       pygame.display.flip()
 
   def savePoint(self):
+    """
+    description: Allows the player to save the game after picking up the book.
+    args: None
+    return: None
+    """
+    pass
     while self.state == "SAVE":
       pygame.font.init()
       self.screen.fill((0, 0, 0))
       font = pygame.font.Font('assets/Basking.ttf', 20)
-      text1 = font.render('Save Game', True, (131, 139, 139))
-      text2 = font.render('Resume', True, (131, 139, 139))
-      text3 = font.render('Save and Quit', True, (131, 139, 139))
+      text1 = font.render('Save and Continue', True, (131, 139, 139))
+      text2 = font.render('Save and Quit', True, (131, 139, 139))
       
-      button_SG = pygame.Rect((175, 20), (150, 100))
-      button_R = pygame.Rect((175, 70), (150, 100))  
-      button_SQ = pygame.Rect((175, 120), (150, 100))
+      button_SC = pygame.Rect((175, 20), (250, 200))
+      button_SQ = pygame.Rect((175, 70), (250, 200))  
 
-      self.screen.blit(self.rbutton, (175, 20))
-      self.screen.blit(self.rbutton, (175, 70))
-      self.screen.blit(self.rbutton, (175, 120))
+      self.screen.blit(self.rbutton, (165, 20))
+      self.screen.blit(self.rbutton, (165, 70))
+      self.rbutton = pygame.transform.scale(self.button, (200, 150))
 
       self.screen.blit(text1, (185, 70))
       self.screen.blit(text2, (185, 120))
-      self.screen.blit(text3, (185, 170))
 
       click = False
       mx, my = pygame.mouse.get_pos()
@@ -181,7 +194,7 @@ class Controller:
           if event.button == 1:
             click = True
 
-      if button_SG.collidepoint((mx, my)):
+      if button_SC.collidepoint((mx, my)):
         if click:
           fptr = open("assets/data.json", "w")
           stats = {
@@ -190,15 +203,14 @@ class Controller:
             "enemy" : self.enemy.health,
             "state" : "GAME"
             }
+          print(stats)
           json.dump(stats, fptr)
+          fptr.flush()
           fptr.close()
           
-
-      if button_R.collidepoint((mx, my)):
-        if click:
           fptr = open("assets/data.json", "r")
           stats = json.load(fptr)
-          self.player.rect.pos = stats["position"]
+          self.player.rect = stats["position"]
           self.player.health = stats["health"]
           self.enemy.health = stats["enemy"]
           self.state = stats["state"]
@@ -223,30 +235,51 @@ class Controller:
 
   def gameOver(self):
     """
-    description: 
+    description: Displays screen for when player is killed by enemy. Has options to retry from the beginning or exit the game.
     args: None
     return: None
     """
-    pygame.font.init()
-    font = pygame.font.Font('assets/Basking.ttf', 20)
-    self.screen.fill(0, 0, 0)
-    self.screen.blit(self.gameover, (0, 0))
-    button_retry = pygame.Rect((25, 210), (150, 100))
-    text = font.render('Retry', True, (131, 139, 139))
+    while self.state == "GAMEOVER":
+      pygame.font.init()
+      font = pygame.font.Font('assets/Basking.ttf', 20)
+      self.screen.fill(0, 0, 0)
+      self.screen.blit(self.gameover, (0, 0))
+      button_retry = pygame.Rect((25, 210), (150, 100))
+      text = font.render('Retry', True, (131, 139, 139))
 
-    click = False
-    mx, my = pygame.mouse.get_pos()
+      click = False
+      mx, my = pygame.mouse.get_pos()
 
-    for event in pygame.event.get():
-      event.type == pygame.mouse.get_pressed()
-      if event.type == pygame.MOUSEBUTTONDOWN:
-        if event.button == 1:
-          click = True
+      for event in pygame.event.get():
+        event.type == pygame.mouse.get_pressed()
+        if event.type == pygame.MOUSEBUTTONDOWN:
+          if event.button == 1:
+            click = True
 
-        if button_retry.collidepoint((mx, my)):
-          if click:
-            self.state = "GAME"
+          if button_retry.collidepoint((mx, my)):
+            if click:
+              self.state = "GAME"
+  
+  def win(self):
+    """
+    description: Will display screen if player kills the enemy. 
+    args: None
+    return: None
+    """
+    while self.state == "WIN":
+      self.screen.fill(31,34,52)
+      self.screen.blit(self.balloons)
+      pygame.font.init()
+      font = pygame.font.Font('assets/Basking.ttf', 20)
+      button_exit = pygame.rect((25, 210), (150, 100))
+      text = font.render ( 'Exit' , True , (131, 139, 139))
+      text2 = font.render ('Enemy defeated.' , True,(131, 139, 139))
+      text3 = font.render ('You win!' , True, (131, 139, 139))
 
+      self.screen.blit(text, ())
+      self.screen.blit(text2, ())
+      self.screen.blit(text3, ())
+    
   def exitGame(self):
     """
     description: stops running program ("Exits game")
@@ -259,7 +292,7 @@ class Controller:
 
   def newGame(self):
     """
-    description: 
+    description: Sets up the menu screen while allowing the player to input their name. 
     args: None
     return: None
     """
@@ -314,14 +347,20 @@ class Controller:
 
   def loadGame(self):
     """
-    description: 
+    description: Loads the save file the player created previously.
     args: None
     return: None
     """
-    fptr = open("assets/data.json", "r")
-    stats = json.load(fptr)
-    self.player.rect.pos = stats["position"]
-    self.player.health = stats["health"]
-    self.enemy.health = stats["enemy"]
-    self.state = stats["state"]
-    fptr.close()
+    pass
+    # fptr = open("assets/data.json", "r")
+    # stats = json.load(fptr)
+    # self.player.rect = stats["position"]
+    # self.player.health = stats["health"]
+    # self.enemy.health = stats["enemy"]
+    # self.state = stats["state"]
+    # fptr.close()
+
+        # if save file exists, loads a save file but if no file exists runs newGame()
+        # needs to create a json file
+        # honestly think we should ask him about how to create this properly on monday
+
