@@ -139,8 +139,7 @@ The back end specialist
       Collaborated with the GUI
       
 ## Testing *(Software Lead)*
-      Ran the code repeatedly whenever an error came up until it could be specifically identified. Then fixed issues and ran code again trying to cause the same         error from before to see if problem was actuallly fixed.
-      When the backspace feature when typing in the inpuit box on the menu page did not work. We tried to run the code over an over to see exactly what the problem       was. Also, asked Prof. Moore for help. Then after finding the issue and fixing it, we ran the menu page many times trying to get an error, such as writing         more code than the amount of space in the box, writing letters that go below the box line a little, ie. gpq, etc and seeing if the backspace still worked.
+      Ran the code repeatedly whenever an error came up until it could be specifically identified. Then fixed issues and ran code again trying to cause the same error from before to see if problem was actuallly fixed. For example, When the backspace feature when typing in the inpuit box on the menu page did not work. We tried to run the code over an over to see exactly what the problem was. Also, asked Prof. Moore for help. Then after finding the issue and fixing it, we ran the menu page many times trying to get an error, such as writing more code than the amount of space in the box, writing letters that go below the box line a little, ie. gpq, etc and seeing if the backspace still worked.
       
 
 * Your ATP
