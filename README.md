@@ -121,6 +121,12 @@ Fonts (Preview).
 * etc
     * <This is a catch all folder for things that are not part of your project, but you want to keep with your project. Your demo video should go here.>
 
+
+https://user-images.githubusercontent.com/89817842/145488591-6a8511cb-84bb-48db-8391-219702b7cad6.mp4
+
+https://user-images.githubusercontent.com/89817842/145488957-f8a8e6d9-0bad-4c86-8219-bc5a90145ac3.mp4
+
+
 ***
 
 ## Tasks and Responsibilities *(Software Lead)*
@@ -145,7 +151,9 @@ The back end specialist:
       Collaborated with the GUI
       
 ## Testing *(Software Lead)*
-      Ran the code repeatedly whenever an error came up until it could be specifically identified. Then fixed issues and ran code again trying to cause the same error from before to see if problem was actuallly fixed. For example, When the backspace feature when typing in the inpuit box on the menu page did not work. We tried to run the code over an over to see exactly what the problem was. Also, asked Prof. Moore for help. Then after finding the issue and fixing it, we ran the menu page many times trying to get an error, such as writing more code than the amount of space in the box, writing letters that go below the box line a little, ie. gpq, etc and seeing if the backspace still worked. We also had UX becuase we had our friends test our code
+      Ran the code repeatedly whenever an error came up until it could be specifically identified. Then fixed issues and ran code again trying to cause the same error
+
+ from before to see if problem was actuallly fixed. For example, When the backspace feature when typing in the inpuit box on the menu page did not work. We tried to run the code over an over to see exactly what the problem was. Also, asked Prof. Moore for help. Then after finding the issue and fixing it, we ran the menu page many times trying to get an error, such as writing more code than the amount of space in the box, writing letters that go below the box line a little, ie. gpq, etc and seeing if the backspace still worked. We also had UX becuase we had our friends test our code
       
 
 * Your ATP
