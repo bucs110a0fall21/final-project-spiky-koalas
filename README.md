@@ -92,7 +92,8 @@ Images.
 ![Player_L](https://user-images.githubusercontent.com/89892102/145123247-371b4ba3-ad08-40e0-aacd-437083de8210.png)
 ![Player_D](https://user-images.githubusercontent.com/89892102/145123254-728c767d-569a-4e09-9f96-0ea9a669adc6.png)
 ![Player_R](https://user-images.githubusercontent.com/89892102/145123319-3d6807b1-501f-487c-b4c3-11317f0323b8.png)
-![potion](https://user-images.githubusercontent.com/89892102/145126305-5540ac2c-ab8a-43e9-a240-7af99b335393.png)
+![trophy](https://user-images.githubusercontent.com/89892102/145312600-f4fd659b-a73b-43ab-bfaa-03e5aa62207b.png)
+![balloons](https://user-images.githubusercontent.com/89892102/145312602-3652397f-5218-4d00-bc83-419c621fefd8.png)
 
            
 Fonts (Preview).
