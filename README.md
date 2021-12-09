@@ -125,21 +125,21 @@ Fonts (Preview).
 * You must outline the team member roles and who was responsible for each class/method, both individual and collaborative.
 
 ### Software Lead - Madeline Scotti
-Worked as integration specialist by
-       Did most of pixel art and GUI designing
-       Colloborated on/helped write Controller, Enemy, Item and Hero classes
+Worked as integration specialist by:
+       Did most of pixel art and GUI designing,
+       Colloborated on/helped write Controller, Enemy, Item and Hero classes,
        Gave ideas on how to structure code and what to fix in Controller, Enemy, and Hero classes
 
 ### Front End Specialist - Klara Veljkovic
-Front-end lead conducted significant research on
-       Controller class 
+Front-end lead conducted significant research on:
+       Controller class,
        GUI
 
 ### Back End Specialist - Luisa Urgiles
-The back end specialist
-      Enemy class
-      Player Class
-      Item Class
+The back end specialist:
+      Enemy class,
+      Player Class,
+      Item Class,
       Collaborated with the GUI
       
 ## Testing *(Software Lead)*
