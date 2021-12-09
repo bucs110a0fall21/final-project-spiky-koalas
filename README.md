@@ -71,7 +71,9 @@ Final GUI!!!
         * ![class diagram](assets/class_diagram.jpg)
     * This does not need to be overly detailed, but should show how your code fits into the Model/View/Controller paradigm.
 * Classes
-    * << You should have a list of each of your classes with a description. >>
+    -Player class: Sets the position of the player, allows the player to move up down, left and right. As the player moves the animation movement also changes, and player changes direction. Allowes the player to attack the enemy.
+    -Enemy class: Sets the position of the enemy, and the enemy losses health as the player is attacking them.
+    -Item class- Sets the position of the book and trophy objects, sets the images and rectangle objects.
 
 ## Project Structure *(Software Lead)*
 
