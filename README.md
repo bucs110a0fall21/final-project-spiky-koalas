@@ -65,6 +65,9 @@ Final GUI!!!
     
 * Class Interface Design
     * << A simple drawing that shows the class relationships in your code (see below for an example). >>
+  <img width="631" alt="Screen Shot 2021-12-08 at 9 56 56 PM" src="https://user-images.githubusercontent.com/89942620/145328805-8e8bf8b1-416f-4bc4-b4ba-0d1667dd5f6c.png">
+
+  
         * ![class diagram](assets/class_diagram.jpg)
     * This does not need to be overly detailed, but should show how your code fits into the Model/View/Controller paradigm.
 * Classes
