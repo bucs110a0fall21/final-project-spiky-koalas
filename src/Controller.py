@@ -28,7 +28,7 @@ class Controller:
     self.book = Item.Item(60, 65, 1)
     self.trophy = Item.Item(370, 65, 2)
     self.player = Player.Player()
-    self.enemy = Enemy.Enemy("Ghosty", 310, 160, "assets/enemy_L.png")  
+    self.enemy = Enemy.Enemy("Ghosty", 330, 150, "assets/enemy_L.png")  
     self.all_sprites = pygame.sprite.Group((self.enemy), (self.player), (self.book), (self.trophy))
     self.trophy.kill()
 
@@ -70,7 +70,7 @@ class Controller:
     """
     while self.state == "MENU":
       pygame.font.init()
-      font = pygame.font.Font("assets/Stranger back in the Night.ttf", 80)
+      font = pygame.font.Font("assets/Stranger_back_in_the_Night.ttf", 80)
       font2 = pygame.font.Font('assets/Basking.ttf', 20)
       text = font.render('The Haunted', True, (131, 139, 139))
       text2 = font.render('Mansion', True, (131, 139, 139))
@@ -159,7 +159,6 @@ class Controller:
      
         elif self.player.attacking == False:
           self.player.health -= random.randrange(0,5)
-          print(self.player.attacking == True)
           if self.player.health <= 0:
             self.state = "GAMEOVER"
       else:
@@ -168,7 +167,6 @@ class Controller:
           self.all_sprites.add(self.trophy)
           winning = pygame.Rect.colliderect(self.player.rect, self.trophy)
           if winning:
-            print("trophy time")
             self.state = "WIN"
 
         self.player.move()
@@ -179,7 +177,6 @@ class Controller:
 
       if pygame.Rect.colliderect(self.player.rect, self.book.rect):
         self.state = "SAVE"
-        print(self.state)
 
       pygame.display.flip()
 
@@ -233,7 +230,6 @@ class Controller:
             "enemy" : self.enemy.health,
             "state" : "GAME"
             }
-          print(stats)
           json.dump(stats, fptr)
           fptr.flush()
           fptr.close()
@@ -266,7 +262,6 @@ class Controller:
     return: None
     """
     while self.state == "GAMEOVER":
-      print(self.state)
       pygame.font.init()
       font = pygame.font.Font('assets/Basking.ttf', 20)
       self.screen.fill((0, 0, 0))

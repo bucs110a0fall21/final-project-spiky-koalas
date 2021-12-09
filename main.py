@@ -4,12 +4,6 @@ import pygame
 
 def main():
     pygame.init()
-    team = {"lead": "Madeline Scotti", "backend": "Luisa Urgiles", "frontend": "Klara Veljkovic"}
-    print("Software Lead is:", team["lead"])
-    print("Backend is:", team["backend"])
-    print("Frontend is:" , team["frontend"])
-    #Create an instance on your controller objects
-    #Call your mainloop
     game = Controller.Controller()
     game.mainLoop()
 	
