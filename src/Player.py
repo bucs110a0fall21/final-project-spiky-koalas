@@ -31,7 +31,6 @@ class Player(pygame.sprite.Sprite):
     args: direction
     return: None
     """
-    # set limits if outside don't move
     if direction == "U":
       self.direction = "U"
       self.image = pygame.image.load("assets/Player/Player_U.png")
