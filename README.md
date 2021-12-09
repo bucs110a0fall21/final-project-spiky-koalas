@@ -58,10 +58,11 @@ Final GUI!!!
 
 ## Program Design *(Backend Specialist)*
 * Non-Standard libraries
-    * << You should have a list of any additional libraries or modules used (pygame, request) beyond non-standard python. >>
-    * For each additional module you should include
-        * url for the module documentation
-        * a short description of the module
+
+    * Numpy library
+    * Numpy documentation url: https://numpy.org/doc/stable/reference/
+    * Numpy library description: The numpy library is used to perform a number of mathematical operations on arrays such as trigonometry, statistical, and algebraic routines. Was mostly used for random range. 
+    
 * Class Interface Design
     * << A simple drawing that shows the class relationships in your code (see below for an example). >>
         * ![class diagram](assets/class_diagram.jpg)
