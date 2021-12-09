@@ -129,7 +129,7 @@ Worked as integration specialist by
 ### Front End Specialist - Klara Veljkovic
 Front-end lead conducted significant research on
        Controller class 
-       Collaborated with the GUI
+       GUI
 
 ### Back End Specialist - Luisa Urgiles
 The back end specialist
