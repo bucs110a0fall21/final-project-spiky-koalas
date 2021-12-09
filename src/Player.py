@@ -6,7 +6,7 @@ class Player(pygame.sprite.Sprite):
   def __init__ (self):
     """
     description: Function initializes the player state and the sprite.   
-    args:
+    args: None
     return: None
     """
     
