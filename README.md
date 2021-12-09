@@ -46,7 +46,13 @@ Victory screen.
 ![Victory screen](https://user-images.githubusercontent.com/89892102/145123039-70109e9f-00e2-4c48-856d-14c9d0aaa5a3.png)
 ^ Screen is displayed after enemy is defeated and player picks up an item. Text should say victory, etc. Player can only now exit the game.
 
-* << You should also have a screenshot of each screen for your final GUI >>
+Final GUI!!!
+![Screen Shot 2021-12-07 at 6 20 24 PM](https://user-images.githubusercontent.com/89892102/145317504-bde0ee9c-88fd-45e8-bad5-a48a4edd455d.png)
+![Screen Shot 2021-12-08 at 8 24 03 PM](https://user-images.githubusercontent.com/89892102/145317511-46a0ae21-175a-4902-8f49-e5c1f4fe157b.png)
+![Screen Shot 2021-12-08 at 7 31 50 PM](https://user-images.githubusercontent.com/89892102/145317520-e790ac13-76b9-426a-97b8-eb392cf9e182.png)
+![Screen Shot 2021-12-08 at 6 49 12 PM](https://user-images.githubusercontent.com/89892102/145317524-4ba450be-5291-4856-9e93-6b840f26303e.png)
+![Screen Shot 2021-12-08 at 7 31 31 PM](https://user-images.githubusercontent.com/89892102/145317530-22462d65-baa1-46d8-8322-99a5a2b6dbf2.png)
+
 
 ***        
 
