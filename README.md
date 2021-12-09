@@ -7,7 +7,7 @@
 
 << [https://github.com/<repo>](#) >>
 
-<< [link to demo presentation slides](#) >>
+<< [https://docs.google.com/presentation/d/1OxxwIGcMleXSVdTLxSrG6W3KtX3ggaaaX9cc-2JWcY0/edit?usp=sharing] >>
 
 <<<<<<< HEAD
 ### Team: Spiky Koalas
